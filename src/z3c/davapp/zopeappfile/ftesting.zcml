@@ -1,0 +1,8 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <include package="z3c.dav" file="ftesting.zcml" />
+  <include package="zope.app.file" />
+
+  <include package="z3c.davapp.zopeappfile" />
+
+</configure>

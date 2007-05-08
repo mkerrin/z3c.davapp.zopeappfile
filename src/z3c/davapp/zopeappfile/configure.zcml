@@ -1,0 +1,25 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <adapter
+      for="zope.app.file.interfaces.IFile
+           zope.publisher.interfaces.http.IHTTPRequest"
+      factory="z3c.dav.adapters.DAVDublinCore"
+      />
+
+  <adapter
+      for="zope.app.file.interfaces.IFile"
+      factory="z3c.dav.adapters.OpaqueProperties"
+      trusted="1"
+      />
+
+  <adapter
+      factory=".DAVFileGetSchema"
+      provides="z3c.dav.coreproperties.IDAVGetcontentlength"
+      />
+
+  <adapter
+      factory=".DAVFileGetSchema"
+      provides="z3c.dav.coreproperties.IDAVGetcontenttype"
+      />
+
+</configure>
