@@ -16,7 +16,13 @@ setup(name = "z3c.davapp.zopeappfile",
                           "zope.app.file",
                           ],
 
-      extras_require = dict(test = ["cElementTree"]),
+      extras_require = dict(test = ["cElementTree"],
+                            testinstance = ["zope.app.twisted",
+                                            "zope.app.securitypolicy",
+                                            "zope.app.zcmlfiles",
+                                            "zope.app.apidoc",
+                                            "cElementTree",
+                                            ]),
 
       include_package_data = True,
       zip_safe = False)
