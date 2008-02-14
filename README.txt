@@ -1,1 +1,2 @@
-Defines the WebDAV data model for zope.app.file File objects and Image objects.
+Define the WebDAV data model for the  File and Image objects from the
+`zope.app.file' module.
