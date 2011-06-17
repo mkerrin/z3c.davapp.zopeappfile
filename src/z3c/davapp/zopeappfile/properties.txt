@@ -2,10 +2,7 @@
 zope.app.file webdav integration
 ================================
 
-  >>> import z3c.etree
   >>> from zope.app.file.file import File
-
-  >>> etree = z3c.etree.getEngine()
 
 Create a content object called `textfile.txt` in the root folder.
 
