@@ -25,6 +25,10 @@ setup(name = "z3c.davapp.zopeappfile",
                           "z3c.dav",
                           "zope.app.file",
                           ],
+      extras_require = dict(
+          test = ["zope.app.zcmlfiles",
+                  ],
+          ),
 
       include_package_data = True,
       zip_safe = False)
